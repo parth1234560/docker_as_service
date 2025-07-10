@@ -25,7 +25,7 @@ with st.container():
         except Exception as e:
             return f"❌ SSH ERROR: {e}"
 
-    if host and username and password:
+    if host and username1 and password:
         st.success("✅ SSH credentials validated.")
 
         menu = st.selectbox("📋 Choose Docker Operation", [
